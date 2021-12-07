@@ -1,0 +1,118 @@
+#addTask {
+  width: 620px;
+  height: 65px;
+  font-size: 24px;
+  color: #c8c8c8;
+  border: 2px solid #c8c8c8;
+  border-radius: 5px;
+}
+
+.DIV4 {
+  width: 200px;
+  height: 60px;
+  float: left;
+  padding: 10px 40px;
+  border-right: 2px solid #c8c8c8;
+}
+
+.DIV6 {
+  width: 200px;
+  height: 100px;
+  float: left;
+  padding: 40px 50px;
+  border-right: 2px solid #c8c8c8;
+}
+
+.DIV1 {
+  width: 200px;
+  height: 60px;
+  float: left;
+  padding: 20px 50px;
+  border-right: 2px solid #c8c8c8;
+}
+
+.DIV2 {
+  width: 350px;
+  height: 60px;
+  float: left;
+  padding: 5px 40px;
+}
+
+.DIV3 {
+  width: 400px;
+  height: 60px;
+  float: left;
+  padding-top: 5px;
+  padding-left: 40px;
+}
+
+.DIV5 {
+  width: 400px;
+  height: 60px;
+  float: left;
+  padding-top: 5px;
+  padding-left: 40px;
+}
+
+.DIV7 {
+  width: 400px;
+  height: 100px;
+  float: left;
+  padding-top: 5px;
+  padding-left: 40px;
+}
+
+.InputTasksForm {
+  width: 620px;
+  margin: 0 auto;
+}
+
+.inputName2 {
+  height: 60px;
+  border-bottom: 2px solid #c8c8c8;
+}
+
+.inputName3 {
+  height: 100px;
+  border-bottom: 2px solid #c8c8c8;
+}
+
+.InputTask {
+  height: 700px;
+  border-style: solid;
+  background: #f2f2f2;
+}
+
+/*輸入框的縮排比文字還要裡面*/
+.inputForm {
+  padding-left: 75px;
+}
+/*輸入框去除框線和調整字體大小*/
+.inputStyle {
+  border: 2px solid #c8c8c8;
+  font-size: 16px;
+}
+/*日期匡要調整長寬，看起來比較順眼*/
+.inputDateTime {
+  height: 35px;
+  width: 162px;
+}
+
+/*共同樣式，長、寬、字體大小、對齊、取消框線*/
+.addButton {
+  width: 310px;
+  height: 60px;
+  font-size: 24px;
+  text-align: center;
+}
+/*分別設定按鈕顏色及字的顏色*/
+.saveButton {
+  background: #4a90e2;
+  border-color: #4a90e2;
+  color: #ffffff;
+}
+.cancelButton {
+  background: #fffffd;
+  border-color: #fffffd;
+  color: #d0021b;
+}

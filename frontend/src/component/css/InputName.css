@@ -1,0 +1,53 @@
+.inputName {
+  padding-left: 50px;
+  padding-top: 25px;
+}
+
+.InputTasksForm {
+  width: 650px;
+  margin: 0 auto;
+}
+
+.InputTask {
+  height: 455px;
+  background: #f2f2f2;
+  text-align: left;
+}
+
+/*輸入框的縮排比文字還要裡面*/
+.inputForm {
+  padding-left: 75px;
+}
+/*輸入框去除框線和調整字體大小*/
+.inputStyle {
+  border: none;
+  font-size: 16px;
+}
+/*日期匡要調整長寬，看起來比較順眼*/
+.inputDateTime {
+  height: 35px;
+  width: 162px;
+}
+
+.inputNumber {
+  height: 35px;
+  width: 50px;
+}
+
+/*共同樣式，長、寬、字體大小、對齊、取消框線*/
+.addButton {
+  width: 310px;
+  height: 60px;
+  font-size: 24px;
+  text-align: center;
+  border: none;
+}
+/*分別設定按鈕顏色及字的顏色*/
+.saveButton {
+  background: #4a90e2;
+  color: #ffffff;
+}
+.cancelButton {
+  background: #fffffd;
+  color: #d0021b;
+}

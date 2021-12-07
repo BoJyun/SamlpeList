@@ -1,0 +1,45 @@
+/*先把整個頁面的邊距取消掉，然後背景色為灰色*/
+body {
+  margin: 0px;
+  background: #e1e1e1;
+}
+/*設定背景顏色、高度和對齊方式，上方的區塊和下方的內容會有一點距離，所以開外邊界推開*/
+#topBlock {
+  background: #4a90e2;
+  height: 75px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.b {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.bookMark {
+  background: #4a90e2; /*背景顏色*/
+  color: #00408b; /*字體顏色*/
+  text-align: center; /*置中*/
+  font-size: 24px; /*字體大小*/
+  height: 75px; /*按鈕高度*/
+  width: 220px; /*按鈕寬度*/
+  border: none; /*取消框線*/
+}
+
+.booklogin {
+  /* float: right; */
+  background: #4a90e2; /*背景顏色*/
+  color: #00408b; /*字體顏色*/
+  text-align: center;
+  font-size: 24px; /*字體大小*/
+  height: 75px; /*按鈕高度*/
+  width: 220px; /*按鈕寬度*/
+  border: none; /*取消框線*/
+}
+
+.select_bookMark {
+  color: #ffffff;
+  height: 70px; /*改變高度因為要扣底線的粗5px不然會凸出來*/
+  border-bottom: solid 5px #00408b; /*設定下底線的樣式、粗細、顏色*/
+}

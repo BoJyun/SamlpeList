@@ -1,0 +1,33 @@
+.InputTasksForm {
+  width: 620px;
+  margin: 0 auto;
+}
+
+.InputTasksForm2 {
+  width: 620px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.InputTaskData {
+  height: 200px;
+  background: #f2f2f2;
+  text-align: left;
+}
+
+.addButton {
+  width: 310px;
+  height: 60px;
+  font-size: 24px;
+  text-align: center;
+  border: none;
+}
+/*分別設定按鈕顏色及字的顏色*/
+.saveButton {
+  background: #4a90e2;
+  color: #ffffff;
+}
+.cancelButton {
+  background: #fffffd;
+  color: #d0021b;
+}

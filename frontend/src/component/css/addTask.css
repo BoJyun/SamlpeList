@@ -1,0 +1,17 @@
+#addTask {
+  width: 620px;
+  height: 65px;
+  font-size: 24px;
+  color: #c8c8c8;
+  border: 2px solid #c8c8c8;
+  border-radius: 5px;
+}
+
+#outputdata {
+  width: 620px;
+  height: 65px;
+  font-size: 24px;
+  color: #c8c8c8;
+  border: 2px solid #c8c8c8;
+  border-radius: 5px;
+}

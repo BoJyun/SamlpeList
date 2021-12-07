@@ -1,0 +1,46 @@
+.inputTaskTitle {
+  width: 620px;
+  height: 75px;
+  background: #f2f2f2;
+  margin: 0px auto;
+  text-align: left;
+  border-bottom: solid 3px #c8c8c8;
+}
+
+.taskTitle {
+  background: #f2f2f2;
+  border: none;
+  height: 28px;
+  width: 300px;
+  font-size: 24px;
+  margin: 25px;
+  /* margin-left: 65px; */
+}
+/*要把勾選框變兩倍大，還要距離左邊界一些距離*/
+.taskChk {
+  margin-left: 15px;
+  height: 35px;
+}
+
+.icon {
+  margin-left: 20px;
+}
+
+.icon_edit {
+  color: #4a90e2;
+}
+
+/*加上刪除線*/
+.complete {
+  text-decoration: line-through;
+  color: #9b9b9b;
+}
+
+/*更換背景顏色*/
+.important {
+  background: #fff2dc;
+}
+/*更換icon顏色*/
+.iconImportant {
+  color: #f5a623;
+}
