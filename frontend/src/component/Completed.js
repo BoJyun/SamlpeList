@@ -14,13 +14,13 @@ const InputName=({className,inputName})=>{
 }
 
 const Completed=()=>{
-    const [date,setDate]=useState({startTime:'',endTime:''})
+    const [date,setDate]=useState({startDate:'',endDate:''})
     const [spin,setSpin]=useState(false)
     const refData=React.useRef()
     const appCtx2 = React.useContext(AppContext);
 
     const closedata=()=>{
-        setDate({startTime:'',endTime:''})
+        setDate({startDate:'',endDate:''})
         refData.current.style.display = 'none'
     }
 
@@ -36,8 +36,8 @@ const Completed=()=>{
     }
 
     const outputExcel=()=>{
-        if (date.startTime==''||date.endTime==''){
-            alert('input startTime and endTime')
+        if (date.startDate==''||date.endDate==''){
+            alert('input startDate and endDate')
         }else{
             setSpin(true)
             ayncFun()
@@ -46,7 +46,7 @@ const Completed=()=>{
 
     const ayncFun=async()=>{
         try{
-            let res=await appCtx2.fetchDownloadExcel({'starTime':date.startTime,'endTime':date.endTime})
+            let res=await appCtx2.fetchDownloadExcel({'startDate':date.startDate,'endDate':date.endDate})
         }catch(error){
             alert(error.message)
         }finally{
@@ -67,14 +67,14 @@ const Completed=()=>{
                 </div>
                 <div style={{display:'none'}} ref={refData}>
                     <div class="InputTaskData" >
-                        <InputName className="fas fa-calendar-alt" inputName="StartTime" />
+                        <InputName className="fas fa-calendar-alt" inputName="StartDate" />
                         <div class="inputForm">
-                            <input name="date" id="startTime" type="date" value={date.startTime} class="inputStyle inputDateTime" onChange={(e)=>{changeState(e)}}
+                            <input name="date" id="startDate" type="date" value={date.startDate} class="inputStyle inputDateTime" onChange={(e)=>{changeState(e)}}
                                     />
                         </div>
-                        <InputName className="fas fa-calendar-alt" inputName="EndtTime" />
+                        <InputName className="fas fa-calendar-alt" inputName="EndDate" />
                         <div class="inputForm">
-                            <input name="date" id="endTime" type="date" value={date.endTime} class="inputStyle inputDateTime" onChange={(e)=>{changeState(e)}}
+                            <input name="date" id="endDate" type="date" value={date.endDate} class="inputStyle inputDateTime" onChange={(e)=>{changeState(e)}}
                                     />
                         </div>
                     </div>

@@ -263,6 +263,7 @@ def mkdirs_in_batch_bak(path):
 @authentication_classes([JWTAuthentication])
 def outout_excel(request):
     result = {}
+    print(request.data)
     try:
         dateFile = Mylist.objects.filter(complete=True,
                                          date__range=[request.data.get('startDate'), request.data.get('endDate')])
