@@ -28,6 +28,7 @@ def getFile(request):
             name = serializer.data['name']
             date = serializer.data['date']
             num = serializer.data['num']
+            project = serializer.data['project']
             file = serializer.data['file']
             commit = serializer.data['commit']
             important = serializer.data['important']
@@ -59,7 +60,7 @@ def getFile(request):
             for chunk in fileload.chunks():
                 file_handler.write(chunk)
             file_handler.close()
-            obj = Mylist.objects.create(name=name, date=date, num=num, file=file, commit=commit,
+            obj = Mylist.objects.create(name=name, date=date, num=num, file=file, commit=commit, project=project,
                                         important=important, complete=complete, file_path=folder_absolute_path)
 
             channel_layer = get_channel_layer()
@@ -271,24 +272,26 @@ def outout_excel(request):
         wb = openpyxl.Workbook()
         sheet = wb.create_sheet("data", 0)
         sheet.cell(row=1, column=1).value = 'ID'
-        sheet.cell(row=1, column=2).value = 'file'
-        sheet.cell(row=1, column=3).value = 'date'
-        sheet.cell(row=1, column=4).value = 'done_User'
-        sheet.cell(row=1, column=5).value = 'starTime'
-        sheet.cell(row=1, column=6).value = 'endTime'
+        sheet.cell(row=1, column=2).value = 'project'
+        sheet.cell(row=1, column=3).value = 'file'
+        sheet.cell(row=1, column=4).value = 'date'
+        sheet.cell(row=1, column=5).value = 'Owner'
+        sheet.cell(row=1, column=6).value = 'starTime'
+        sheet.cell(row=1, column=7).value = 'endTime'
 
         i = 2
         for j in dateFile:
             sheet.cell(row=i, column=1).value = j.name
-            sheet.cell(row=i, column=2).value = j.file
-            sheet.cell(row=i, column=3).value = j.date
-            sheet.cell(row=i, column=4).value = j.attachmentfile.done_user
-            sheet.cell(row=i, column=5).value = j.attachmentfile.start_time
-            sheet.cell(row=i, column=6).value = j.attachmentfile.done_time
+            sheet.cell(row=i, column=2).value = j.project
+            sheet.cell(row=i, column=3).value = j.file
+            sheet.cell(row=i, column=4).value = j.date
+            sheet.cell(row=i, column=5).value = j.attachmentfile.done_user
+            sheet.cell(row=i, column=6).value = j.attachmentfile.start_time
+            sheet.cell(row=i, column=7).value = j.attachmentfile.done_time
             i += 1
 
-        fileName = "{}T{}".format(request.data.get('starTime'),
-                                  request.data.get('endTime'))
+        fileName = "{}T{}".format(request.data.get('startDate'),
+                                  request.data.get('endDate'))
         file_path = settings.MEDIA_ROOT+r"/" + \
             "excel" + r"/"+"{}.xlsx".format(fileName)
         wb.save(file_path)

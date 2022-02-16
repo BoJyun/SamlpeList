@@ -8,6 +8,7 @@ class Mylist(models.Model):
     # id = models.IntegerField(primary_key=True)
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=30)
+    project = models.CharField(max_length=30, null=True)
     date = models.DateField()
     num = models.IntegerField(null=True)
     file = models.CharField(max_length=30)

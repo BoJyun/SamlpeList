@@ -28,13 +28,15 @@ const InputTaskForm=({closeAdd,stateData,changeState,submitTodo,filebox,download
     return(
                 <div class="InputTasksForm">
                     <div class="InputTask">
+                        <InputName className="fas fa-address-card" inputName="Project" />
+                        <div class="inputForm">
+                            <input name="project" type="text" class="inputStyle inputProject"
+                                        value={stateData.project} onChange = {changeState}/>
+                        </div>
                         <InputName className="fas fa-calendar-alt" inputName="Deadline" />
                         <div class="inputForm">
                             <input name="date" type="date" class="inputStyle inputDateTime"
                                     value={stateData.date} onChange = {changeState}/>
-                            {/* &nbsp; &ensp;
-                            <input name="time" type="number" class="inputStyle inputNumber"  min="1"
-                                    value={stateData.time} onChange = {changeState}/>px */}
                         </div>
                         <InputName className="fa fa-calculator" inputName="Quantity " />
                         <div class="inputForm">

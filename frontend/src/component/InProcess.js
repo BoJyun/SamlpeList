@@ -7,8 +7,8 @@ const InProcess=()=>{
     const ws=React.useRef(null)
 
     React.useEffect(()=>{
-        ws.current = new WebSocket("ws://172.16.99.113:81/samplelist/ws/mylist/");
-        // ws.current = new WebSocket("ws://127.0.0.1:8000/samplelist/ws/mylist/");
+        // ws.current = new WebSocket("ws://172.16.99.113:81/samplelist/ws/mylist/");
+        ws.current = new WebSocket("ws://127.0.0.1:8000/samplelist/ws/mylist/");
         ws.current.onopen=()=>{
             console.log('websocket link success')
         }

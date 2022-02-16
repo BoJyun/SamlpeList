@@ -30,8 +30,8 @@ const AppProvider = ({ children }) => {
       try {
         const response = await axios({
           method: "get",
-          url:"http://172.16.99.113:81/samplelist/account/authentication",
-          // url:"http://127.0.0.1:8000/samplelist/account/authentication",
+          // url:"http://172.16.99.113:81/samplelist/account/authentication",
+          url:"http://127.0.0.1:8000/samplelist/account/authentication",
           headers: {
             "Content-Type": "application/json",
             "Accept": "application/json",
@@ -55,8 +55,8 @@ const AppProvider = ({ children }) => {
       try {
         const response = await axios({
           method: "get",
-          url:"http://172.16.99.113:81/samplelist/mylist/api/fetchGetList",
-          // url:"http://127.0.0.1:8000/samplelist/mylist/api/fetchGetList",
+          // url:"http://172.16.99.113:81/samplelist/mylist/api/fetchGetList",
+          url:"http://127.0.0.1:8000/samplelist/mylist/api/fetchGetList",
           headers: {
             "Content-Type": "application/json",
             "Accept": "application/json",
@@ -76,8 +76,8 @@ const AppProvider = ({ children }) => {
       try {
         const response = await axios({
           method: "get",
-          url:"http://172.16.99.113:81/samplelist/mylist/api/fetchCompletedList",
-          // url:"http://127.0.0.1:8000/samplelist/mylist/api/fetchCompletedList",
+          // url:"http://172.16.99.113:81/samplelist/mylist/api/fetchCompletedList",
+          url:"http://127.0.0.1:8000/samplelist/mylist/api/fetchCompletedList",
           headers: {
             "Content-Type": "application/json",
             "Accept": "application/json",
@@ -96,8 +96,8 @@ const AppProvider = ({ children }) => {
       try {
         const response = await axios({
           method: "post",
-          url:"http://172.16.99.113:81/samplelist/account/login",
-          // url:"http://127.0.0.1:8000/samplelist/account/login",
+          // url:"http://172.16.99.113:81/samplelist/account/login",
+          url:"http://127.0.0.1:8000/samplelist/account/login",
           headers: headers,
           data: {"username":account,"password":password},
         });
@@ -137,6 +137,7 @@ const AppProvider = ({ children }) => {
       dataForm.append("date",list['date']);
       dataForm.append("num",list['num']);
       dataForm.append("file",list['file']);
+      dataForm.append("project",list['project']);
       dataForm.append("commit",list['commit']);
       dataForm.append("important",list['important']);
       dataForm.append("complete",list['complete']);
@@ -145,8 +146,8 @@ const AppProvider = ({ children }) => {
       try {
         const response = await axios({
           method: "post",
-          url:"http:///172.16.99.113:81/samplelist/mylist/api/fetchUploadFile",
-          // url:"http:///127.0.0.1:8000/samplelist/mylist/api/fetchUploadFile",
+          // url:"http:///172.16.99.113:81/samplelist/mylist/api/fetchUploadFile",
+          url:"http:///127.0.0.1:8000/samplelist/mylist/api/fetchUploadFile",
           headers: {"Content-Type": "multipart/form-data"},
           data:dataForm,
         });
@@ -164,8 +165,8 @@ const AppProvider = ({ children }) => {
       try{
         const response = await axios({
           method: "patch",
-          url:"http://172.16.99.113:81/samplelist/mylist/api/fetchComplete/"+list["id"],
-          // url:"http://127.0.0.1:8000/samplelist/mylist/api/fetchComplete/"+list["id"],
+          // url:"http://172.16.99.113:81/samplelist/mylist/api/fetchComplete/"+list["id"],
+          url:"http://127.0.0.1:8000/samplelist/mylist/api/fetchComplete/"+list["id"],
           headers: {
             "Content-Type": "application/json",
             "Accept": "application/json",
@@ -187,8 +188,8 @@ const AppProvider = ({ children }) => {
       try{
         const response = await axios({
           method: "delete",
-          url:"http://172.16.99.113:81/samplelist/mylist/api/fetchQuit/"+list,
-          // url:"http://127.0.0.1:8000/samplelist/mylist/api/fetchQuit/"+list,
+          // url:"http://172.16.99.113:81/samplelist/mylist/api/fetchQuit/"+list,
+          url:"http://127.0.0.1:8000/samplelist/mylist/api/fetchQuit/"+list,
           headers: headers,
         });
 
@@ -204,8 +205,8 @@ const AppProvider = ({ children }) => {
       try{
         const response = await axios({
           method: "patch",
-          url:"http://172.16.99.113:81/samplelist/mylist/api/fetchUpdataData/"+list["id"],
-          // url:"http://127.0.0.1:8000/samplelist/mylist/api/fetchUpdataData/"+list["id"],
+          // url:"http://172.16.99.113:81/samplelist/mylist/api/fetchUpdataData/"+list["id"],
+          url:"http://127.0.0.1:8000/samplelist/mylist/api/fetchUpdataData/"+list["id"],
           headers: {
             "Content-Type": "application/json",
             "Accept": "application/json",
@@ -227,8 +228,8 @@ const AppProvider = ({ children }) => {
       try{
         const response = await axios({
           method: "POST",
-          url:"http://172.16.99.113:81/samplelist/mylist/api/fetchDownloadExcel",
-          // url:"http://127.0.0.1:8000/samplelist/mylist/api/fetchDownloadExcel",
+          // url:"http://172.16.99.113:81/samplelist/mylist/api/fetchDownloadExcel",
+          url:"http://127.0.0.1:8000/samplelist/mylist/api/fetchDownloadExcel",
           headers: {
             "Content-Type": "application/json",
             "Accept": "application/json",
@@ -257,8 +258,8 @@ const AppProvider = ({ children }) => {
       try{
         const response = await axios({
           method: "POST",
-          url:"http://172.16.99.113:81/samplelist/mylist/api/fetchDownloadFile",
-          // url:"http://127.0.0.1:8000/samplelist/mylist/api/fetchDownloadFile",
+          // url:"http://172.16.99.113:81/samplelist/mylist/api/fetchDownloadFile",
+          url:"http://127.0.0.1:8000/samplelist/mylist/api/fetchDownloadFile",
           headers: {
             "Content-Type": "application/json",
             "Accept": "application/json",

@@ -8,7 +8,7 @@ import { Spin} from 'antd';
 
 const InputTask=(props)=>{
 
-    const [Task,setTask]=useState({id:'',name:'',date:'',num:1,file:'',commit:'',important:'',process:false,complete:false});
+    const [Task,setTask]=useState({id:'',name:'',project:'',date:'',num:1,file:'',commit:'',important:'',process:false,complete:false});
     const [spin,setSpin]=useState(false)
     const appCtx = React.useContext(AppContext);
 
@@ -60,7 +60,7 @@ const InputTask=(props)=>{
             alert(error.message)
         }finally{
             setSpin(false)
-            setTask({id:'',name:'',date:'',num:'',file:'',commit:''
+            setTask({id:'',name:'',project:'',date:'',num:'',file:'',commit:''
             ,important:'',process:false,complete:false})
             filebox.current.value = ''
             props.closeAdd()
@@ -92,7 +92,7 @@ const InputTask=(props)=>{
             <div>
                 <div class={Task.important=='Y'? "important inputTaskTitle":"inputTaskTitle"}  ref={list}>
                     <input name="name" type="text" class={"taskTitle"+(Task.completed ? 'complete' :'')}
-                    value={Task.name} onChange={changeState} placeholder="Type Your ID Here…" />
+                    value={Task.name} onChange={changeState} placeholder="Type Your Employee ID Here…" />
                 </div>
                 <InputTasksForm closeAdd={props.closeAdd} stateData={Task} changeState={changeState} submitTodo={submitTodo} filebox={filebox} downloadfile={downloadfile}/>
             </div>

@@ -7,7 +7,7 @@ import { AppProvider } from './component/data';
 
 import 'antd/dist/antd.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import '@fortawesome/fontawesome-free/css/fontawesome.min.css';
+import '@fortawesome/fontawesome-free/css/fontawesome.min.css';
 
 ReactDOM.render(
   <AppProvider>

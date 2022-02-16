@@ -9,7 +9,7 @@
 }
 
 .InputTask {
-  height: 455px;
+  height: 535px;
   background: #f2f2f2;
   text-align: left;
 }
@@ -27,6 +27,11 @@
 .inputDateTime {
   height: 35px;
   width: 162px;
+}
+
+.inputProject {
+  height: 30px;
+  width: 150px;
 }
 
 .inputNumber {
