@@ -19,4 +19,5 @@
    Admin配發工作
    ![admin](https://github.com/BoJyun/SamlpeList/blob/master/admin.PNG)
    
+   Admin至資料庫下載過去相關的資料
    ![complete](https://github.com/BoJyun/SamlpeList/blob/master/complete.PNG)
