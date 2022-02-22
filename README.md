@@ -9,11 +9,14 @@
     2.至In Process網站可以查看排隊流程與是否有申請成功，若完成後可至Complete網站查看
     3.Admin登入後。可以指派工作給旗下的Employer去執行
     4.Admin可以在任何時候查閱各個數據
-   樣品需求者申請面
+   
+   樣品需求者申請頁面
    ![Task](https://github.com/BoJyun/SamlpeList/blob/master/task.PNG)
    
+   樣品製作排成
    ![inprocess](https://github.com/BoJyun/SamlpeList/blob/master/inprocess.PNG)
    
+   Admin配發工作
    ![admin](https://github.com/BoJyun/SamlpeList/blob/master/admin.PNG)
    
    ![complete](https://github.com/BoJyun/SamlpeList/blob/master/complete.PNG)
