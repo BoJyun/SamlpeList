@@ -1,5 +1,5 @@
 # SampleList--樣品排程系統
-協助各Admin分配工作與數據整理，並改善工作流程
+使用Django+React+MySQL開發，協助各Admin分配工作與數據整理，並改善工作流程
 
 # 程式架構
 ![Task](https://github.com/BoJyun/SamlpeList/blob/master/artict.PNG)
