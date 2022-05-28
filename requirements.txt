@@ -1,0 +1,35 @@
+asgiref @ file:///tmp/build/80754af9/asgiref_1625643473416/work
+attrs==21.4.0
+autobahn==22.2.2
+Automat==20.2.0
+certifi==2021.10.8
+cffi==1.15.0
+channels==3.0.4
+constantly==15.1.0
+cryptography==36.0.2
+daphne==3.0.2
+Django @ file:///tmp/build/80754af9/django_1625585912945/work
+django-cors-headers==3.11.0
+djangorestframework==3.13.1
+et-xmlfile==1.1.0
+hyperlink==21.0.0
+idna==3.3
+incremental==21.3.0
+mysqlclient==2.1.0
+openpyxl==3.0.9
+psycopg2 @ file:///C:/ci/psycopg2_1612298803839/work
+pyasn1==0.4.8
+pyasn1-modules==0.2.8
+pycparser==2.21
+PyJWT==2.3.0
+pyOpenSSL==22.0.0
+pytz==2021.3
+service-identity==21.1.0
+six==1.16.0
+sqlparse @ file:///tmp/build/80754af9/sqlparse_1602184451250/work
+Twisted==22.2.0
+twisted-iocpsupport==1.0.2
+txaio==22.2.1
+typing_extensions @ file:///opt/conda/conda-bld/typing_extensions_1647553014482/work
+wincertstore==0.2
+zope.interface==5.4.0
